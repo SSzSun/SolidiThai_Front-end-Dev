@@ -1,47 +1,46 @@
 # Getting Started with Create React App
+### 1. Clone Git
+```bash
+git clone https://github.com/SSzSun/devtest-student_view.git
+```
+### 2. Available Scripts
+In the project director <br>
+- Run ` npm i ` or ` npm install `<br>
+- After `npm install` finish<br>
+- Run ` npm start `<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Or I have created a demo in case you don't want to install it.
+### 3. Demo
+[Click Demo](https://solidi-thai-front-end-dev.vercel.app/)
+## Data Test
+<p>I have prepared two kinds of users: authorized users and unauthorized users.<br>
+ผมได้เตรียม user ไว้ 2 แบบ โดยจะ user ที่มีสิทธิในการเข้าสู่ระบบ และ ID ที่ไม่มีสิทธิในการเข้าสู่ระบบ</p>
 
-## Available Scripts
+#### Have permission
+username : `demo` <br>
+password : `demo1`
 
-In the project directory, you can run:
+#### Not have permission
+username : `Bret` <br>
+password : `st_@1` <br>
 
-### `npm start`
+```ts
+"permission": false, <---- ไม่มีสิทธิในการเข้าสู่ Dashboard
+"permission": true, <---- มีสิทธิในการเข้าสู่ Dashboard
+```
+Additional user information can be found in the `user.ts` file.<br>
+สามารถดูข้อมูล ผู้ใช้เพิ่มเติมได้ที่ไฟล์ `user.ts`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# SolidiThai_Front-end-Dev" 
+Ex user.ts
+```ts
+  {
+    "id": 1, <---- ID
+    "id_card": 600502, <---- รหัสนักศึกษา
+    "name": "Leanne", <---- ชื่อ
+    "last_name": "Graham", <---- นามสกุล
+    "username": "Bret", <---- ชื่อผู้ใช้
+    "password": "st_@1", <---- รหัสผ่าน
+    "student_level": "sophomore", <---- ชั้นปีการศึกษา
+    "permission": false, <---- สิทธิในการเข้าสู่ Dashboard
+  },
+```
