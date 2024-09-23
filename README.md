@@ -14,7 +14,7 @@ Or I have created a demo in case you don't want to install it.
 [Click Demo](https://solidi-thai-front-end-dev.vercel.app/)
 ## Data Test
 <p>I have prepared two kinds of users: authorized users and unauthorized users.<br>
-ผมได้เตรียม user ไว้ 2 แบบ โดยจะ user ที่มีสิทธิในการเข้าสู่ระบบ และ ID ที่ไม่มีสิทธิในการเข้าสู่ระบบ</p>
+ผมได้เตรียม user ไว้ 2 แบบ โดยจะ user ที่มีสิทธิในการเข้าสู่ระบบ และ user ที่ไม่มีสิทธิในการเข้าสู่ระบบ</p>
 
 #### Have permission
 username : `demo` <br>
